@@ -6,7 +6,7 @@ let input;
 
 async function getData() {
     try {
-        const response = await fetch('/data.json');
+        const response = await fetch("/data.json");
         const data = await response.json();
 
         return search(data);

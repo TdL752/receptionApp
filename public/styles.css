@@ -95,17 +95,19 @@ nav {
 	border: 10px solid rgba(122, 203, 250, 0.7);
 	border-radius: 20px;
 	padding: 30px;
-	margin: 100px;
+	margin: 100px auto;
+	width: 65%;
 }
 
 .header {
 	margin-top: 100px;
 }
 
-label {
+.label {
 	color: rgba(40, 64, 80, 0.7);
 }
 
 .container-text {
 	font-weight: bold;
+	font-size: 25px;
 }
