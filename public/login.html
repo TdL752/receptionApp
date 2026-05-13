@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<nav id="nav">
+			<img id="logo" alt="logo" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1776180436/20220619164729_IMG_0369_ehdycb.jpg" />
+			<div id="nav-link-container">
+				<a class="nav-link" href="/profile">
+					Profile
+				</a>
+				<a class="nav-link" href="/home">
+					Home
+				</a>
+				<input id="search-input" type="text" placeholder="Search" maxlength="30" />
+				<button id="search-btn">
+					>
+				</button>
+			</div>
+		</nav>
+
+		<fieldset id="field">
+			<div class="input-field">
+				<label class="login-label" for="username">
+					Username: 
+				</label>
+				<input class="login-input" type="text" maxlength="30" id="username">
+			</div>
+
+			<div class="input-field">
+				<label class="login-label" for="password">
+					Password: 
+				</label>
+				<input class="login-input" type="text" maxlength="30" id="password">
+			</div>
+
+			<button type="button" id="login-button">
+				Log In
+			</button>
+		</fieldset>
+
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -58,17 +58,17 @@ nav {
 }
 
 #search-btn {
-	height: 36px;
-	width: 50px;
+	height: 38px;
+	font-weight: bold;
+	border: 2px solid rgb(78, 190, 255);
+	background-color: rgb(157, 219, 255);
 	border-radius: 10px;
-	border: none;
-	background-color: black;
-	color: white;
+	color: rgb(0, 76, 95);
 	transition: background-color .2s;
 }
 
 #search-btn:hover {
-	background-color: grey;
+	background-color: rgb(78, 190, 255);
 	cursor: pointer;
 }
 
@@ -76,18 +76,13 @@ nav {
 	outline: none;
 }
 
-#profile-image {
-	width: 25%;
-	border-radius: 50%;
-	display: block;
-	margin: auto;
-}
 
-/* home page */
+
+/* login page */
 
 #field {
-	border: 10px solid rgba(122, 203, 250, 0.7);
-	border-radius: 10px;
+	border: 10px solid rgb(122, 203, 250);
+	border-radius: 20px;
 	margin: 100px auto;
 	width: 65%;
 	display: flex;
@@ -104,7 +99,7 @@ nav {
 }
 
 .login-input {
-	border: 1px solid rgba(122, 203, 250, 0.7);
+	border: 1px solid rgb(78, 190, 255);
 	border-radius: 10px;
 	padding: 5px;
 	width: 65%;
@@ -121,17 +116,25 @@ nav {
 	font-size: 25px;
 	font-weight: bold;
 	border-radius: 10px;
-	border: 3px solid rgba(78, 190, 255, 0.7);
-	background-color: rgba(122, 203, 250, 0.7);
+	border: 3px solid rgb(78, 190, 255);
+	background-color: rgb(157, 219, 255);
 	margin: 30px auto;
+	transition: background-color .2s;
 }
 
 #login-button:hover {
 	cursor: pointer;
-	background-color: rgba(78, 190, 255, 0.7);
+	background-color: rgb(78, 190, 255);
 }
 
 /* search page */
+
+#profile-image {
+	width: 25%;
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+}
 
 #no-user {
 	display: none;
@@ -161,4 +164,74 @@ nav {
 .container-text {
 	font-weight: bold;
 	font-size: 25px;
+}
+
+
+@media screen and (max-width: 600px) {
+	#search-input {
+		width: 25%;
+		min-width: 45px;
+		height: 15px;
+		padding: 5px;
+		font-size: .8em;
+	}
+
+	#search-btn {
+		height: 27px;
+		width: 30px;
+	}
+
+	nav {
+		height: 2.5em;
+	}
+
+	.nav-link {
+		font-size: 1em;
+	}
+
+	#nav-link-container {
+		width: 100%;
+		justify-content: center;
+
+	}
+
+	#logo {
+		display: none;
+	}
+
+	/* login page */
+
+	#field {
+		display: block;
+		text-align: center;
+		padding: 60px 0;
+		width: 75%;
+	}
+
+	.input-field {
+		margin: 20px auto;
+	}
+
+	.login-input {
+		display: block;
+		margin: auto;
+	}
+
+	/* search page */ 
+
+	#user-container {
+		overflow: scroll;
+	}
+
+	.container {
+		padding: 30px none;
+	}
+
+	.label {
+		font-size: 25px;
+	}
+
+	.container-text {
+		font-size: 18px;
+	}
 }

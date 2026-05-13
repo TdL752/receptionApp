@@ -5,6 +5,11 @@ let input;
 
 
 async function getData() {
+    if (input == '') {
+        userContainer.style.display = 'none';
+        return;
+    };
+
     try {
         const response = await fetch("/data.json");
         const data = await response.json();
@@ -67,9 +72,6 @@ const displayUser = (users) => {
 document.getElementById('search-input').addEventListener('input', () => {
     input = document.getElementById('search-input').value;
     
-    if (input === '') {
-        userContainer.style.display = 'none';
-    };
 });
 
 searchBtn.addEventListener('click', () => {

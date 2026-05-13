@@ -6,7 +6,11 @@ const path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname, 'public', 'home.html'));
+	res.sendFile(path.join(__dirname, 'public', 'login.html'));
+});
+
+app.get('/search', (req, res) => {
+	res.sendFile(path.join(__dirname, 'public', 'search.html'));
 });
 
 app.listen(port, () => {
